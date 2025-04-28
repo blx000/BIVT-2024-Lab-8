@@ -41,6 +41,7 @@ namespace Lab_8
                 }
                 string[] newStrings = new string[ans.Length + 1]; //Добавляем сформированную строку в массив результатов
                 Array.Copy(ans, newStrings, ans.Length);
+                newStrings[ans.Length] = curr.Substring(0, curr.Length - 1);
                 ans = newStrings;
             }
             _output = ans;
